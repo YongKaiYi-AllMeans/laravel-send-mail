@@ -17,4 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/sendmail', [\App\Http\Controllers\SendmailController::class, 'sendMail']);
+Route::get('sendemail', [App\Http\Controllers\EmailController::class, 'sendEmail']);
